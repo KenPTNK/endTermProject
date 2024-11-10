@@ -6,14 +6,14 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 10px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(/image/headBackground.webp);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(./image/headBackground.webp);
 }
 
 /* back to top button */
 .btn-back-to-top {
     position: fixed;
     background: none;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(/image/headBackground.webp);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(./image/headBackground.webp);
     border-radius: 10px;
     padding: 0;
     cursor: pointer;
@@ -82,6 +82,88 @@
     border-radius: 10px;
 }
 
-body{
+body {
     height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(./image/antwebbg.jpg);
+    /* Image URL */
+    background-size: cover;
+    /* Ensure the background image covers the entire screen */
+    background-position: center center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent repeating the image */
+    background-attachment: fixed;
+    /* Make the background stay fixed while scrolling */
+}
+
+/* Container styles */
+.container {
+    margin: 20px auto 20px auto;
+    border-radius: 20px;
+    height: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F79E7C;
+    /* Light peach color */
+    padding: 20px;
+}
+
+/* Text container styles */
+.text-container {
+    flex: 1;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text-container p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.idkbtn{
+    text-align: center;
+}
+
+.text-container button {
+    background-color: black;
+    /* Darker peach color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.text-container button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Image container styles */
+.image-container {
+    flex: 1;
+    text-align: center;
+    /* height: 100px; */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer{
+    justify-content: space-between;
+    background-color: black;
+    color: white;
 }
