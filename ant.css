@@ -1,0 +1,177 @@
+/* Header */
+#header {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(/image/headBackground.webp);
+}
+
+/* back to top button */
+.btn-back-to-top {
+    position: fixed;
+    background: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(/image/headBackground.webp);
+    border-radius: 10px;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.btn-back-to-top img {
+    transition: transform 0.3s ease, background-size 0.3s ease;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-back-to-top:active {
+    transform: scale(1.1);
+    /* enlarge when clicked */
+}
+
+.nav {
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: larger;
+}
+
+.navbar a:hover {
+    background-color: #FEC5E5;
+    border-radius: 10px;
+}
+
+/* website */
+body,
+html {
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(/image/antwebbg.jpg);
+    /* Image URL */
+    background-size: cover;
+    /* Ensure the background image covers the entire screen */
+    background-position: center center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent repeating the image */
+    background-attachment: fixed;
+    /* Make the background stay fixed while scrolling */
+}
+
+.antShoppingWeb {
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%), url(/image/antwebbg.jpg);
+    /* Image URL */
+    background-size: cover;
+    /* Ensure the background image covers the entire screen */
+    background-position: center center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent repeating the image */
+    background-attachment: fixed;
+    /* Make the background stay fixed while scrolling */
+}
+
+.pic {
+    background: transparent;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
+
+.col {
+    margin: 0 0.5%;
+    border: 5px groove pink;
+    border-radius: 25px;
+    width: 100vw;
+    /* 100% of the viewport width */
+    height: 100vh;
+    /* 100% of the viewport height */
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+}
+
+.firstPic {
+    max-width: 300px;
+    height: auto;
+    margin-right: auto;
+}
+
+.secondPic {
+    max-width: 200px;
+    height: auto;
+    margin-right: 300px;
+}
+
+.product-info {
+    width: 100%;
+    text-align: center;
+}
+.product .product-info{
+    width: 74%;
+}
+
+.product-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+.product-info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info form input {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #FEC5E5;
+    border: none;
+    border-radius: 10px;
+}
+.product-info form input::placeholder{
+    color: black;
+}
+
+.product-info form button {
+    background-color: #FFC2D9;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* make a border for the pic */
