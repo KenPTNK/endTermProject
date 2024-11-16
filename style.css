@@ -52,6 +52,15 @@
     margin: 0 15px;
 }
 
+.carousel-caption a {
+    text-decoration: none;
+}
+
+.carousel-caption a:hover {
+    text-decoration: underline;
+    text-decoration-color: pink;
+}
+
 .navbar a {
     color: #000000;
     text-decoration: none;
@@ -74,6 +83,10 @@
 
 .carousel-inner {
     background-color: #fff;
+}
+
+h5 {
+    color: #FEC5E5;
 }
 
 .carousel-caption {
@@ -100,7 +113,7 @@ body {
 .container {
     margin: 20px auto 20px auto;
     border-radius: 20px;
-    height: auto;
+    height: 100%;
     width: 70%;
     display: flex;
     justify-content: space-around;
@@ -112,7 +125,7 @@ body {
 /* Text container styles */
 .text-container {
     flex: 1;
-    padding: 20px;
+    padding-left: 20px;
     flex-direction: column;
 }
 
@@ -120,6 +133,7 @@ body {
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .text-container p {
@@ -129,8 +143,12 @@ body {
     text-align: justify;
 }
 
-.idkbtn{
+.idkbtn {
     text-align: center;
+}
+
+.idkbtn button {
+    font-weight: bold;
 }
 
 .text-container button {
@@ -144,7 +162,7 @@ body {
     width: 300px;
 }
 
-.text-container button:hover{
+.text-container button:hover {
     background-color: white;
     color: black;
 }
@@ -162,8 +180,20 @@ body {
     border-radius: 10px;
 }
 
-.footer{
+.footer {
     justify-content: space-between;
     background-color: black;
     color: white;
 }
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}   
+
+.itemList p{
+    font-size: 15px;
+}
+
+
