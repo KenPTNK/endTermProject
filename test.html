@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Pop-up Information</title>
+  <style>
+    .container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .info {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #f9f9f9;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="text-container">
-            <h2>Everyone can be an ant keeper!</h2>
-            <p>Keeping ants as pets is not hard! With the Esthetic Ants starter set you will have everything you need to
-                get started. Keeping ants at home can look very overwhelming when you first start but with this set you
-                will become a pro ant keeper in no-time!</p>
-            <button>Start your journey!</button>
-        </div>
-        <div class="image-container">
-            <img src="/image/avatar.png" alt="Ant keeping starter set">
-        </div>
-    </div>
-</body>
 
+  <div class="container">
+    <!-- Button -->
+    <button class="btn" onmouseover="showInfo()" onmouseout="hideInfo()">Hover Me</button>
+    
+    <!-- The Information -->
+    <p class="info">This is some additional information that pops up when you hover over the button!</p>
+  </div>
+
+  <script>
+    // Function to show the information
+    function showInfo() {
+      document.querySelector('.info').style.display = 'block';
+    }
+
+    // Function to hide the information
+    function hideInfo() {
+      document.querySelector('.info').style.display = 'none';
+    }
+  </script>
+
+</body>
 </html>
