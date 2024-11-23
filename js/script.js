@@ -27,3 +27,46 @@ function showInfo() {
 function hideInfo() {
   document.querySelector('.info').style.display = 'none';
 }
+
+function signUp() {
+  let firstNameData = document.getElementById('firstName').value
+  let lastNameData = document.getElementById('lastName').value
+  let emailData = document.getElementById('email').value
+  let countryData = document.getElementById('country').value
+  let passwordData = document.getElementById('password').value
+  let cfPasswordData = document.getElementById('cfPassword').value
+
+
+  let users = JSON.parse(localStorage.getItem('users')) || []
+
+  for (let i = 0; i < users.length; i++) {
+    if (passwordData !== cfPasswordData) {
+      alert('Incorrect password')
+      return
+    }
+    if (users[i].email === emailData) {
+      alert('Email already exist')
+      return
+    }
+    if (user[i].firstName === firstNameData) {
+      alert('Username already exist')
+      return
+    }
+    if (user[i].lastName === lastNameData) {
+      alert('Username already exist')
+      return
+    }
+  }
+  const data = {
+    firstName: firstNameData,
+    lastName: lastNameData,
+    email: emailData,
+    country: countryData,
+    password: passwordData,
+    cfPasword: cfPasswordData
+  }
+
+  users.push(data)
+  localStorage.setItem('users', JSON.stringify(users))
+
+}
