@@ -186,6 +186,19 @@ body {
     /* height: 100px; */
 }
 
+.image-container p{
+    padding-top: 5px;
+}
+
+.image-container a{
+    color: black;
+    text-align: center;
+}
+
+.image-container a:hover{
+    color: #800000;
+}
+
 .image-container img {
     max-width: 100%;
     height: auto;

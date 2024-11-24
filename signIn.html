@@ -32,29 +32,47 @@
 
     <div class="container">
         <div class="image-container">
-            <img src="./image/everyonecanbeantkeeper.webp" alt="Ant keeping starter set">
+            <img src="./image/formPic.webp" alt="Ant keeping starter set">
+            <a href="./register.html"><p>Haven't Got? Get One!</p></a>
         </div>
-        <div class="text-container nopadding">
-            <h2>Ant Keeping Starter Set - Founding Colony (With Free Ants)</h2>
-            <p>- Price: 24.95€</p>
-            <div class="idkbtn">
-                <a href="./antKeepingStarterSet.html"><button>Purchase now</button></a>
-            </div>
+        <div class="text-container register">
+            <h2>Log In To Prove You Are Ant Man</h2>
             <div class="item">
                 <div class="itemList">
-                    <p>1 x Mini outworld</p>
-                    <p>2 x Test Tube 150mm</p>
-                    <p>2 x Acrylic Inserts</p>
-                    <p>1 x Test Tube cover</p>
-                    <p>1 x Ant jelly</p>
+                    <div class="form-info">
+                        <div class="form-more-info">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-more-info">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-more-info">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-more-info">
+                            <label for="lastName">Country</label>
+                            <input type="text" id="country" name="country">
+                        </div>
+                    </div>
+                    <div class="form-info">
+                        <div class="form-more-info">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-more-info">
+                            <label for="cfPassword">Confirm password</label>
+                            <input type="password" id="cfPassword" name="cfPassword" required>
+                        </div>
+                    </div>
                 </div>
-                <div class="itemList">
-                    <p>3 x Large cotton ball</p>
-                    <p>1 x Feeding dish</p>
-                    <p>1 x Test tube feeding dish</p>
-                    <p>1 x 3ML syringe</p>
-                    <p>1 x Pair of plastic tweezers</p>
-                </div>
+            </div>
+            <div class="idkbtn">
+                <a href=""><button onclick="logIn()">Log in</button></a>
             </div>
         </div>
     </div>
