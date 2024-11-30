@@ -1,6 +1,7 @@
 // Get the button
 const backToTopButton = document.getElementById("btn-back-to-top");
 
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -38,6 +39,7 @@ function signUp() {
 
   if (firstNameData === '' || lastNameData === '' || emailData === '' || countryData === '' || passwordData === '') {
     alert('Please fill all of the gaps')
+    location.href = "register.html"
     return
   }
 
@@ -47,14 +49,13 @@ function signUp() {
   for (let i = 0; i < users.length; i++) {
     if (passwordData !== cfPasswordData) {
       alert('Incorrect password')
+      location.href = "register.html"
       return
-    }
-    if (users[i].email === emailData || users[i].firstName === firstNameData || users[i].lastName === lastNameData) {
-      alert('Account already exist')  
     }
   }
 
-  alert('Sign Up Successfully')
+  alert('Purchase Successfully')
+  location.href = "index.html"
 
   const data = {
     firstName: firstNameData,
@@ -72,31 +73,44 @@ function signUp() {
 
 
 
-function logIn() {
-  event.preventDefault();
-  let firstNameData = document.getElementById('firstName').value
-  let lastNameData = document.getElementById('lastName').value
-  let emailData = document.getElementById('email').value
-  let countryData = document.getElementById('country').value
-  let passwordData = document.getElementById('password').value
-  let cfPasswordData = document.getElementById('cfPassword').value
-  
-  let users = JSON.parse(localStorage.getItem('users')) || []
-  
-  if (firstNameData === '' || lastNameData === '' || emailData === '' || countryData === '' || passwordData === '') {
-    alert('Please fill all of the gaps')
-    return
-  }
-  
-  for (let i = 0; i < users.length; i++) {
-    if (passwordData !== cfPasswordData) {
-      alert('Incorrect Password')
-      return
-    }
-    if (users[i].email === emailData && users[i].firstName === firstNameData && users[i].lastName === lastNameData && users[i].country === countryData && users[i].password === passwordData) {
-      alert('Log in successfully')
-      location.href ="./index.html"
-      return
-    }
-  }
-}
+// function logIn() {
+//   event.preventDefault();
+//   let firstNameData = document.getElementById('firstName').value
+//   let lastNameData = document.getElementById('lastName').value
+//   let emailData = document.getElementById('email').value
+//   let countryData = document.getElementById('country').value
+//   let passwordData = document.getElementById('password').value
+//   let cfPasswordData = document.getElementById('cfPassword').value
+
+//   let users = JSON.parse(localStorage.getItem('users')) || []
+
+//   if (firstNameData === '' || lastNameData === '' || emailData === '' || countryData === '' || passwordData === '') {
+//     alert('Please fill all of the gaps')
+//     return
+//   }
+
+//   let i = 0
+
+//   while (i < users.length) {
+//     if (passwordData !== cfPasswordData) {
+//       alert('Incorrect Password')
+//       location.href = "./signIn.html"
+//       return
+//     }
+//     if (users[i].email === emailData && users[i].firstName === firstNameData && users[i].lastName === lastNameData && users[i].country === countryData && users[i].password === passwordData) {
+//       alert('Log in successfully')
+//       break
+//     }
+//     i++
+//   }
+   
+//   if (i==0) {
+//     alert('No match result')
+//     condition = false
+//     location.href = "./signIn.html"
+//     return
+//   }
+
+//   hello = document.getElementById('sign');
+//   hello.textContent = 'Hello' + firstNameData
+// }

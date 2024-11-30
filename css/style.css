@@ -18,12 +18,18 @@
     padding: 0;
     cursor: pointer;
     z-index: 1000;
+    bottom: 20px;
+    right: 20px;
 }
 
 .btn-back-to-top img {
     transition: transform 0.3s ease, background-size 0.3s ease;
     width: 50px;
     height: 50px;
+}
+
+.btn-back-to-top:hover{
+    transform: scale(1.2);
 }
 
 .btn-back-to-top:active {
@@ -75,7 +81,7 @@
     border-radius: 10px;
 }
 
-/* caroseol */
+/* carousel */
 .d-block {
     height: 600px;
     background: linear-gradient(to bottom, transparent, black);
